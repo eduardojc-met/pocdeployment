@@ -65,7 +65,7 @@ spring:
 #
 # Then, modify the server.ssl properties so your "server" configuration looks like:
 #
- server:
+server:
    port: 8080
    ssl:
      key-store: classpath:config/tls/keystore.p12
