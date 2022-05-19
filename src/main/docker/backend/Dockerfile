@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD target/*.jar pocdeployment-2.0.1-SNAPSHOT.jar 
-ENTRYPOINT ["java", "-jar","pocdeployment-2.0.1-SNAPSHOT.jar"]
+ADD target/*.jar pocdeployment.jar 
+ENTRYPOINT ["java", "-jar","pocdeployment.jar"]
 EXPOSE 8080
