@@ -58,6 +58,6 @@ spec:
       targetPort: 8085
   selector:
     io.kompose.service: front
-  type: LoadBalancer
+  type: ClusterIP
 status:
   loadBalancer: {}
