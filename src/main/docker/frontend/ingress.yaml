@@ -61,7 +61,7 @@ spec:
               service:
                 name: pocdeployment-fe
                 port:
-                  number: 8080
+                  number: 8085
     - host: fronttestx.auto.public-cross.dev.scf-hq.com
       http:
         paths:
@@ -71,7 +71,7 @@ spec:
               service:
                 name: pocdeployment-fe
                 port:
-                  number: 8080
+                  number: 8085
 status:
   loadBalancer:
     ingress:
