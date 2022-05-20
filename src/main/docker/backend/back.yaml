@@ -38,7 +38,7 @@ spec:
           resources: {}
           livenessProbe:
             httpGet:
-              path: /management/health/
+              path: /management/health
               port: 8080
               scheme: HTTPS
             initialDelaySeconds: 5
@@ -48,7 +48,7 @@ spec:
             failureThreshold: 3
           readinessProbe:
             httpGet:
-              path: /management/health/
+              path: /management/health
               port: 8080
               scheme: HTTPS
             initialDelaySeconds: 5
