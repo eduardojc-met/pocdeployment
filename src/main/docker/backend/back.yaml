@@ -40,7 +40,7 @@ spec:
             httpGet:
               path: /actuator/health/liveness
               port: 8080
-              scheme: HTTP
+              scheme: HTTPS
             initialDelaySeconds: 90
             timeoutSeconds: 30
             periodSeconds: 30
@@ -50,7 +50,7 @@ spec:
             httpGet:
               path: /actuator/health/readiness 
               port: 8080
-              scheme: HTTP
+              scheme: HTTPS
             initialDelaySeconds: 60
             timeoutSeconds: 30
             periodSeconds: 30
