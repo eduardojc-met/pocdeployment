@@ -41,21 +41,21 @@ spec:
               path: /actuator/health
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 5
-            timeoutSeconds: 1
-            periodSeconds: 5
+            initialDelaySeconds: 90
+            timeoutSeconds: 30
+            periodSeconds: 30
             successThreshold: 1
-            failureThreshold: 10
+            failureThreshold: 3
           readinessProbe:
             httpGet:
               path: /actuator/health
               port: 8080
               scheme: HTTP
-            initialDelaySeconds: 5
-            timeoutSeconds: 1
-            periodSeconds: 5
+            initialDelaySeconds: 60
+            timeoutSeconds: 30
+            periodSeconds: 30
             successThreshold: 1
-            failureThreshold: 10
+            failureThreshold: 3
       restartPolicy: Always
 status: {}
 
