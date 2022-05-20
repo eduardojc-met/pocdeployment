@@ -40,7 +40,7 @@ spec:
             httpGet:
               path: management/health/liveness
               port: 8082
-              scheme: HTTP
+              scheme: HTTPS
             initialDelaySeconds: 120
             timeoutSeconds: 30
             periodSeconds: 30
@@ -51,7 +51,7 @@ spec:
               host: localhost
               path: management/health/readiness
               port: 8082
-              scheme: HTTP
+              scheme: HTTPS
             initialDelaySeconds: 60
             timeoutSeconds: 30
             periodSeconds: 30
