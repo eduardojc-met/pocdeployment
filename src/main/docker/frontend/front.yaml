@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     kompose.cmd: kompose convert
-    kompose.service.type: LoadBalancer
+    kompose.service.type: ClusterIP
     kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
@@ -60,7 +60,7 @@ kind: Service
 metadata:
   annotations:
     kompose.cmd: kompose convert
-    kompose.service.type: LoadBalancer
+    kompose.service.type: ClusterIP
     kompose.version: 1.26.0 (40646f47)
   creationTimestamp: null
   labels:
