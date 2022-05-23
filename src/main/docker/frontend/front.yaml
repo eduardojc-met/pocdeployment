@@ -33,12 +33,12 @@ spec:
           ports:
             - containerPort: 8085
           readinessProbe:
-          httpGet:
-            scheme: HTTPS
-            path: /index.html
-            port: 8085
-          initialDelaySeconds: 60
-          periodSeconds: 5
+            httpGet:
+              scheme: HTTPS
+              path: /index.html
+              port: 8085
+            initialDelaySeconds: 60
+            periodSeconds: 5
           resources: {}
       restartPolicy: Always
 status: {}
