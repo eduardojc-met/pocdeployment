@@ -40,7 +40,15 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 5
           resources: {}
+          livenessProbe:
+            httpGet:
+              scheme: HTTP
+              path: /index.html
+              port: 8085
+            initialDelaySeconds: 60
+            periodSeconds: 5
       restartPolicy: Always
+
 status: {}
 
 
